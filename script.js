@@ -21,26 +21,36 @@ const perguntas = [
 },
 
 {
-     enunciado: "Qual é a história da catedral? " ,
-    alternativas: [ "",
-    "Alternativa 2"
+     enunciado: "Que epoca foi construída catedral? " ,
+    alternativas: [ "Construída no período de julho de 1959 a maio de 1972.",
+    "Construída no periodo de Novembro de 2006 a janeiro de 2015"
 
 ]
 },
 
 {
     enunciado: "qual os principal evento de Maringá?" ,
-    alternativas: [ "expoingá",
-    ""
+    alternativas: [ "Expoingá",
+    "Carnaval"
 
     ]
 },
 
 {
-    enunciado: "qual o nome e como foi criado o estádio de Maringá?" ,
-    alternativas: [ "Alternativas 1",
-    "Alternativa 2"
+    enunciado: "qual o nome e quando foi criado o estádio de Maringá?" ,
+    alternativas: [ "Maracanã em 1950",
+    "Willie Davids em 1953"
 
     ]
+}// fecha objeto da pergunta
+];//fecha lista de perguntas 
+
+let atual = 0;
+let perguntaAtual; 
+
+function mostraPergunta(){
+    perguntaAtual = perguntas[atual];
+    caixaPerguntas = document.querySelector(".caixa-pergntas");
 }
-]
+
+mostraPergunta();
